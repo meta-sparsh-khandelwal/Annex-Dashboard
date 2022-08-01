@@ -1,0 +1,211 @@
+/* css reset */
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif !important;
+}
+/* navbar */
+.navbar-custom {
+    background: #5b6be8;
+    padding: 15px 5px;
+    margin-left: 250px;
+}
+/* media query for navbar */
+@media screen and (max-width:998px)  {
+    .navbar-custom{
+        margin-left: 0px;
+    }
+}
+.navbar-custom .dropdown i{
+    color: #fff;
+}
+#searchForm {
+    color: #bbbaba;
+}
+form #searchInput {
+    width: 30%;
+    padding: 6px 10px;
+    border-radius: 18px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    background: #6d7beb;
+}
+#searchForm i {
+    cursor: pointer;
+}
+#profileImg {
+    width: 35px;
+    border-radius: 50%;
+}
+.nav-icons .dropdown i.navIcon {
+    font-size: 1.6em;
+}
+/* dropdowns in navbar */
+.language .dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 6px;
+}
+.dropdown .flag-image {
+    width: 30px;
+}
+.dropdown .language-link {
+    text-decoration: none;
+    color: #fff;
+}
+.dropdown .language-link img {
+    width: 35px;
+}
+.dropdown .dropdown-title-bar, .dropdown .dropdown-item-bar {
+    display: flex;
+    padding: 4px 7px;
+}
+.dropdown-number {
+    border-radius: 3px;
+    background: #fd2121;
+    color: #fff;
+    padding: 2px;
+    font-size: 0.8rem;
+}
+.dropdown-item.dropdown-item-bar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar-custom .dropdown .dropdown-item-bar i {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.2rem;
+    padding: 10px;
+    margin: 1px 5px;
+    border-radius: 50%;
+}
+.navbar-custom .dropdown .dropdown-item-bar i.noti-1 {
+    background-color: #5b6be8;
+}
+.navbar-custom .dropdown .dropdown-item-bar i.noti-2 {
+    background-color: #3cab94;
+}
+.navbar-custom .dropdown .dropdown-item-bar i.noti-3 {
+    background-color: #f5b225;
+}
+.dropdown .dropdown-title-bar {
+    background: #eff3f6;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+.dropdown-title, .dropdown-item-title {
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+.dropdown-item-content {
+    padding: 3px;
+    width: 15rem;
+}
+.dropdown-item-para {
+    font-size: 0.8rem;
+    color: #979797;
+}
+.dropdown-menu {
+    padding: 0px !important;
+}
+.dropdown .bottom-bar {
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.dropdown .dropdown-menu-notification {
+    max-width: 300px;
+}
+ul#dropdown-menu-profile {
+    width: 100%;
+    font-size: 15px;
+}
+ul#dropdown-menu-profile .dropdown-item-bar{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+ul#dropdown-menu-profile .bottom-bar {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+ul#dropdown-menu-profile .bottom-bar i{
+    color: #979797;
+    margin-right: 10px;
+}
+ul#dropdown-menu-profile .dropdown-item-bar i{
+    color: #979797;
+}
+/* sidebar using offcanvas */
+.offcanvas-lg{
+    position: fixed;
+    bottom: 45px;
+    min-height: 0 !important;
+    width: 250px !important;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#offcanvasResponsive::-webkit-scrollbar {
+    display: none;
+}
+.offcanvas-body.flex-column::-webkit-scrollbar {
+    display: none;
+}
+.offcanvas-body{
+    width: 250px !important;
+    padding: 0 !important;
+}
+.offcanvas-body .heading{
+    padding: 60px 0px;
+    height: 30px;
+}
+#sidebar-menu{
+    color: gray;
+}
+#sidebar-menu ul li a{
+    color: black;
+    display: block;
+    padding: 16px 25px;
+    text-decoration: none;
+}
+#sidebar-menu ul li a i{
+    margin-right: 8px;
+}
+#sidebar-menu .menu-title{
+    padding: 12px 20px;
+}
+#sidebar-menu .active{
+    background-color: rgb(228, 226, 226);
+    color: blue;
+}
+.has_sub ul{
+    padding: 0px 60px;
+}
+.has_sub ul li{
+    padding: 5px;
+}
+/* cards */
+.content-page{
+    margin-left: 250px;
+    background-color: rgb(218, 229, 255);
+    height: fit-content;
+}
+ @media screen and (max-width:998px)  {
+    .content-page{
+        margin-left: 0px;
+    }
+}
+.content{
+    padding: 10px;
+}
